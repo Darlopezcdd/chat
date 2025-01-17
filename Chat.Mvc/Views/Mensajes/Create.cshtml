@@ -1,0 +1,25 @@
+﻿@model chat.Modelos.Mensaje
+
+<h1>Enviar Mensaje</h1>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="UserRemitenteId">ID del Remitente</label>
+        <input type="number" class="form-control" asp-for="UserRemitenteId" required />
+    </div>
+    <div class="form-group">
+        <label for="UserDestinatarioId">ID del Destinatario (Opcional si es para un grupo)</label>
+        <input type="number" class="form-control" asp-for="UserDestinatarioId" />
+    </div>
+    <div class="form-group">
+        <label for="GrupoId">ID del Grupo (Opcional)</label>
+        <input type="number" class="form-control" asp-for="GrupoId" />
+    </div>
+    <div class="form-group">
+        <label for="Contenido">Contenido del Mensaje</label>
+        <textarea class="form-control" asp-for="Contenido" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+    <a href="@Url.Action("Index", "Mensajes")" class="btn btn-secondary">Cancelar</a>
+</form>
+

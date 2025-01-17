@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5953HCkjwOM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Chat.Mvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lopez\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

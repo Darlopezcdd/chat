@@ -1,0 +1,186 @@
+﻿@model Chat.Mvc.Models.ChatViewModel
+<div class="chat-container">
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h4>Seleccionar Usuario Activo</h4>
+        <form asp-action="Index" method="get">
+            <div class="form-group">
+                <label for="currentUserId">Usuario Activo:</label>
+                <select name="currentUserId" class="form-control" onchange="this.form.submit()">
+                    @foreach (var user in Model.Usuarios)
+
+                    {
+                        <option value="@user.Id" selected="@(user.Id == Model.UsuarioActivoId ? "selected" : null)">
+                            @user.Name
+                        </option>
+                    }
+                </select>
+            </div>
+        </form>
+
+        <h4>Chats</h4>
+        <ul>
+            @foreach (var user in Model.Usuarios.Where(u => u.Id != Model.UsuarioActivoId))
+            {
+                <li>
+                    <a href="@Url.Action("Index", "Mensajes", new { userId = user.Id })">
+                        @user.Name
+                    </a>
+                </li>
+            }
+
+            <h5>Grupos</h5>
+            @if (!Model.Grupos.Any())
+            {
+                <div class="alert alert-info">
+                    No hay grupos disponibles en este momento.
+                </div>
+            }
+            else
+            {
+                @foreach (var grupo in Model.Grupos)
+
+                {
+                    <li>
+                        <a href="@Url.Action("Index", "Mensajes", new { grupoId = grupo.Id })">
+                            @grupo.Name
+                        </a>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <!-- Área de mensajes -->
+    <div class="chat-messages">
+        <div class="messages">
+            <h2>Mensajes</h2>
+            @if (!Model.Mensajes.Any())
+            {
+                <div class="alert alert-warning">
+                    No hay mensajes para mostrar.
+                </div>
+            }
+            else
+            {
+                <ul>
+                    @foreach (var mensaje in Model.Mensajes)
+                    {
+                        <li>
+                            <strong>De:</strong> @mensaje.NombreRemitente
+                            <strong>Para:</strong> @mensaje.NombreDestinatario
+                            <p>@mensaje.Contenido</p>
+                            <span>@mensaje.FechaEnvio</span>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+
+        <!-- Campo de entrada -->
+        <div class="message-input">
+            <form asp-action="Create" method="post">
+                <input type="hidden" name="UserRemitenteId" value="@Model.UsuarioActivoId" />
+                <input type="hidden" name="UserDestinatarioId" value="@Model.UsuarioSeleccionadoId" />
+                <input type="text" name="Contenido" placeholder="Escribe un mensaje..." required />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        // Scroll automático al final de los mensajes
+        const messagesDiv = document.querySelector('.messages');
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    </script>
+}
+
+<style>
+    .chat-container {
+        display: flex;
+        height: 90vh;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .sidebar {
+        width: 30%;
+        background: #f8f9fa;
+        padding: 15px;
+        border-right: 1px solid #ccc;
+    }
+
+    .sidebar h4 {
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .chat-messages {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .messages {
+        flex: 1;
+        padding: 15px;
+        overflow-y: auto;
+        background: #e9ecef;
+    }
+
+    .message {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 60%;
+    }
+
+    .message.sent {
+        background: #007bff;
+        color: white;
+        align-self: flex-end;
+    }
+
+    .message.received {
+        background: #f1f1f1;
+        align-self: flex-start;
+    }
+
+    .message-input {
+        display: flex;
+        padding: 10px;
+        background: #f8f9fa;
+        border-top: 1px solid #ccc;
+    }
+
+    .message-input input[type="text"] {
+        flex: 1;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .message-input button {
+        padding: 10px 20px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+    }
+</style>

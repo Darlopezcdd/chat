@@ -1,0 +1,289 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Chat.Mvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Chat.Mvc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\0dbc8c93-1dca-4248-9c30-153a009c0e83.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\0dbc8c93-1dca-4248-9c30-153a009c0e83.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\439125b6-4e63-4235-a628-678ab122cb15.jpg",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\439125b6-4e63-4235-a628-678ab122cb15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\75239b69-59e5-4191-8929-b637d99fe317.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\75239b69-59e5-4191-8929-b637d99fe317.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\9707d4c2-a260-49f7-9b32-680ac1df3c4a.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\9707d4c2-a260-49f7-9b32-680ac1df3c4a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\b0b13c23-928e-4ac1-b33d-39ddabb446ba.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\b0b13c23-928e-4ac1-b33d-39ddabb446ba.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\f88b6b65-40ae-4ceb-9cee-90bcc5108a6b.gif",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\f88b6b65-40ae-4ceb-9cee-90bcc5108a6b.gif"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Chat.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Chat.Mvc.props",
+      "PackagePath": "build\\Chat.Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Chat.Mvc.props",
+      "PackagePath": "buildMultiTargeting\\Chat.Mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Chat.Mvc.props",
+      "PackagePath": "buildTransitive\\Chat.Mvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
