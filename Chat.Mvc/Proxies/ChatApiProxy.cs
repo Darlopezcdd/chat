@@ -1,6 +1,7 @@
 ﻿using chat.Modelos;
 using Chat.Mvc.Proxies;
 using Newtonsoft.Json;
+using System.Net.Http;
 using System.Text;
 
 public class ChatApiProxy : IChatApiProxy
@@ -14,11 +15,19 @@ public class ChatApiProxy : IChatApiProxy
 
     public async Task<List<User>> GetUsersAsync()
     {
-        var response = await _httpClient.GetAsync("Users");
-        response.EnsureSuccessStatusCode();
+        try
+        {
+            var response = await _httpClient.GetAsync("Users"); // Endpoint "Users".
+            response.EnsureSuccessStatusCode();
 
-        var content = await response.Content.ReadAsStringAsync();
-        return JsonConvert.DeserializeObject<List<User>>(content);
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<User>>(content);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en GetUsersAsync: {ex.Message}");
+            return new List<User>(); // Devuelve una lista vacía si ocurre un error.
+        }
     }
 
     public async Task<User> GetUserByIdAsync(int id)
@@ -71,49 +80,59 @@ public class ChatApiProxy : IChatApiProxy
         response.EnsureSuccessStatusCode();
         return bool.Parse(await response.Content.ReadAsStringAsync());
     }
-    public async Task<bool> MarcarMensajesComoLeidosAsync(int userId)
+    public async Task<bool> MarcarMensajesComoLeidosAsync(List<Mensaje> mensajes)
     {
-        var response = await _httpClient.PutAsync($"Mensajes/MarcarComoLeidos/{userId}", null);
-        return response.IsSuccessStatusCode;
+        try
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(mensajes), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync("Mensajes/MarcarComoLeidos", content);
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al marcar mensajes como leídos: {ex.Message}");
+            return false;
+        }
     }
+
     public async Task<List<Grupo>> GetGruposAsync()
     {
         try
         {
-            // Realiza la solicitud al endpoint
+   
             var response = await _httpClient.GetAsync("Grupos");
             response.EnsureSuccessStatusCode();
 
-            // Procesa la respuesta si es exitosa
+
             var content = await response.Content.ReadAsStringAsync();
             var grupos = JsonConvert.DeserializeObject<List<Grupo>>(content);
 
-            // Si la lista de grupos está vacía, informa
             if (grupos == null || grupos.Count == 0)
             {
                 Console.WriteLine("No se encontraron grupos disponibles.");
-                return new List<Grupo>(); // Devuelve lista vacía
+                return new List<Grupo>(); 
             }
 
             return grupos;
         }
         catch (HttpRequestException ex)
         {
-            // Manejo de errores HTTP (por ejemplo, 404, 500)
+
             Console.WriteLine($"Error al obtener grupos: {ex.Message}");
         }
         catch (JsonException ex)
         {
-            // Manejo de errores de deserialización
+      
             Console.WriteLine($"Error al procesar la respuesta de la API: {ex.Message}");
         }
         catch (Exception ex)
         {
-            // Otros errores inesperados
+  
             Console.WriteLine($"Error inesperado: {ex.Message}");
         }
 
-        // Devuelve una lista vacía si ocurre un error y registra un mensaje
+
         Console.WriteLine("No se pudieron cargar los grupos debido a un error.");
         return new List<Grupo>();
     }
@@ -156,6 +175,9 @@ public class ChatApiProxy : IChatApiProxy
             return false;
         }
     }
+
+
+
 
 
 

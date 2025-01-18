@@ -14,6 +14,7 @@ namespace chat.Modelos
 
         // Remitente
         public int UserRemitenteId { get; set; }
+
         [ForeignKey(nameof(UserRemitenteId))]
         [JsonIgnore]
         public User? UserRemitente { get; set; }

@@ -5,7 +5,7 @@ namespace Chat.Mvc.Models
     public class ChatViewModel
     {
         public int UsuarioActivoId { get; set; }
-        public int? UsuarioSeleccionadoId { get; set; } // Agrega esta propiedad
+        public int? UsuarioSeleccionadoId { get; set; } 
         public List<User> Usuarios { get; set; } = new List<User>();
         public List<Grupo> Grupos { get; set; } = new List<Grupo>();
         public List<MensajeConNombres> Mensajes { get; set; } = new List<MensajeConNombres>();
@@ -16,8 +16,9 @@ namespace Chat.Mvc.Models
         public int Id { get; set; }
         public string Contenido { get; set; }
         public DateTime FechaEnvio { get; set; }
-        public string NombreRemitente { get; set; } // Nombre del remitente
-        public string NombreDestinatario { get; set; } // Nombre del destinatario
+        public string NombreRemitente { get; set; } 
+        public string NombreDestinatario { get; set; } 
+
     }
 
 }

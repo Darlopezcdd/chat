@@ -68,3 +68,4 @@ C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc\obj\Debug\net8.0\ref
 C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc\obj\Debug\net8.0\Chat.Mvc.pdb
 C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc\obj\Debug\net8.0\Chat.Mvc.genruntimeconfig.cache
 C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc\obj\Debug\net8.0\ref\Chat.Mvc.dll
+C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc\obj\Debug\net8.0\Chat.Mvc.sourcelink.json

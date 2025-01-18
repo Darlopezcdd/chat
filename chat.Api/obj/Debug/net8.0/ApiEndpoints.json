@@ -218,6 +218,73 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "chat.Api.Controllers.MensajesController",
+    "Method": "MarcarComoLeidos",
+    "RelativePath": "api/Mensajes/MarcarComoLeidos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mensajes",
+        "Type": "System.Collections.Generic.List\u00601[[chat.Modelos.Mensaje, chat.Modelos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "chat.Api.Controllers.MensajesController",
+    "Method": "MarcarMensajesGrupoComoLeidos",
+    "RelativePath": "api/Mensajes/MarcarMensajesGrupoComoLeidos/{grupoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "chat.Api.Controllers.MensajesController",
+    "Method": "NuevosMensajes",
+    "RelativePath": "api/Mensajes/NuevosMensajes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "chat.Api.Controllers.NotificacionsController",
     "Method": "GetNotificacion",
     "RelativePath": "api/Notificacions",

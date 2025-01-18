@@ -15,16 +15,16 @@ namespace Chat.Mvc.Controllers
             _chatApiProxy = chatApiProxy;
         }
 
-        // Acción para mostrar todos los usuarios
+
         public async Task<IActionResult> Index()
         {
-            // Obtener la lista de usuarios
+ 
             var usuarios = await _chatApiProxy.GetUsersAsync();
 
-            // Obtener la lista de grupos
-            var grupos = await _chatApiProxy.GetGruposAsync(); // Asegúrate de tener este método en tu proxy
 
-            // Crear un ViewModel para enviar ambos datos a la vista
+            var grupos = await _chatApiProxy.GetGruposAsync(); 
+
+           
             var viewModel = new UsuariosYGruposViewModel
             {
                 Usuarios = usuarios,

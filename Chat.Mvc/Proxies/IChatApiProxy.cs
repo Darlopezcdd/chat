@@ -10,7 +10,7 @@ namespace Chat.Mvc.Proxies
 
         Task<List<Mensaje>> GetMensajesAsync();
 		Task<bool> CreateMensajeAsync(Mensaje mensaje);
-        Task<bool> MarcarMensajesComoLeidosAsync(int userId);
+        Task<bool> MarcarMensajesComoLeidosAsync(List<Mensaje> mensajes);
         Task<List<Grupo>> GetGruposAsync();
         Task<bool> MarcarMensajesGrupoComoLeidosAsync(int grupoId);
         Task<bool> DeleteUserAsync(int id);

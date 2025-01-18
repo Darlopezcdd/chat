@@ -5,29 +5,46 @@
         <h4>Seleccionar Usuario Activo</h4>
         <form asp-action="Index" method="get">
             <div class="form-group">
-                <label for="currentUserId">Usuario Activo:</label>
-                <select name="currentUserId" class="form-control" onchange="this.form.submit()">
+                <label for="userId">Usuario Activo:</label>
+                <select name="usuarioActivoId" class="form-control" onchange="this.form.submit()">
                     @foreach (var user in Model.Usuarios)
 
                     {
-                        <option value="@user.Id" selected="@(user.Id == Model.UsuarioActivoId ? "selected" : null)">
-                            @user.Name
-                        </option>
+
+                        if (user.Id == Model.UsuarioActivoId)
+
+                        {
+                            <option value="@user.Id" selected>@user.Name</option>
+                        }
+
+                        else
+
+                        {
+                            <option value="@user.Id">@user.Name</option>
+                        }
+
                     }
                 </select>
             </div>
         </form>
 
+
+
+
         <h4>Chats</h4>
         <ul>
-            @foreach (var user in Model.Usuarios.Where(u => u.Id != Model.UsuarioActivoId))
-            {
-                <li>
-                    <a href="@Url.Action("Index", "Mensajes", new { userId = user.Id })">
-                        @user.Name
-                    </a>
-                </li>
-            }
+           
+                @foreach (var user in Model.Usuarios.Where(u => u.Id != Model.UsuarioActivoId))
+
+                {
+                    <li>
+                        <a href="@Url.Action("Index", "Mensajes", new { usuarioActivoId = Model.UsuarioActivoId, usuarioSeleccionadoId = user.Id })">
+                            @user.Name
+                        </a>
+                    </li>
+                }
+
+
 
             <h5>Grupos</h5>
             @if (!Model.Grupos.Any())
@@ -38,20 +55,20 @@
             }
             else
             {
-                @foreach (var grupo in Model.Grupos)
-
-                {
-                    <li>
-                        <a href="@Url.Action("Index", "Mensajes", new { grupoId = grupo.Id })">
-                            @grupo.Name
-                        </a>
-                    </li>
-                }
+                <ul>
+                    @foreach (var grupo in Model.Grupos)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "Mensajes", new { usuarioActivoId = Model.UsuarioActivoId, grupoId = grupo.Id })">
+                                @grupo.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
             }
+
         </ul>
     </div>
-
-    <!-- Área de mensajes -->
     <div class="chat-messages">
         <div class="messages">
             <h2>Mensajes</h2>
@@ -67,8 +84,8 @@
                     @foreach (var mensaje in Model.Mensajes)
                     {
                         <li>
-                            <strong>De:</strong> @mensaje.NombreRemitente
-                            <strong>Para:</strong> @mensaje.NombreDestinatario
+                            <strong>De:</strong> @mensaje.NombreRemitente <br />
+                            <strong>Para:</strong> @mensaje.NombreDestinatario <br />
                             <p>@mensaje.Contenido</p>
                             <span>@mensaje.FechaEnvio</span>
                         </li>
@@ -77,12 +94,11 @@
             }
         </div>
 
-        <!-- Campo de entrada -->
         <div class="message-input">
-            <form asp-action="Create" method="post">
+            <form asp-action="Create" method="get">
                 <input type="hidden" name="UserRemitenteId" value="@Model.UsuarioActivoId" />
-                <input type="hidden" name="UserDestinatarioId" value="@Model.UsuarioSeleccionadoId" />
-                <input type="text" name="Contenido" placeholder="Escribe un mensaje..." required />
+                
+              
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -90,7 +106,7 @@
 </div>
 @section Scripts {
     <script>
-        // Scroll automático al final de los mensajes
+
         const messagesDiv = document.querySelector('.messages');
         messagesDiv.scrollTop = messagesDiv.scrollHeight;
     </script>

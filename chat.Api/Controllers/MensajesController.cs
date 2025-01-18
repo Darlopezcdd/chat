@@ -98,6 +98,65 @@ namespace chat.Api.Controllers
 
             return NoContent();
         }
+        [HttpGet("NuevosMensajes")]
+        public ActionResult<bool> NuevosMensajes()
+        {
+            bool hayMensajesNoLeidos = _context.Mensaje.Any(m => !m.Leido);
+
+            return Ok(hayMensajesNoLeidos);
+        }
+        [HttpPut("MarcarComoLeidos")]
+        public async Task<IActionResult> MarcarComoLeidos([FromBody] List<Mensaje> mensajes)
+        {
+            try
+            {
+                foreach (var mensaje in mensajes)
+                {
+                    var mensajeDb = await _context.Mensaje.FindAsync(mensaje.Id);
+                    if (mensajeDb != null)
+                    {
+                        mensajeDb.Leido = true;
+                    }
+                }
+
+                await _context.SaveChangesAsync();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al marcar mensajes como leídos: {ex.Message}");
+                return StatusCode(500, "Error interno del servidor.");
+            }
+        }
+
+        [HttpPut("MarcarMensajesGrupoComoLeidos/{grupoId}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> MarcarMensajesGrupoComoLeidos(int grupoId)
+        {
+            if (grupoId <= 0)
+            {
+                return BadRequest("El ID del grupo proporcionado no es válido.");
+            }
+
+            var mensajes = await _context.Mensaje
+                .Where(m => m.GrupoId == grupoId && !m.Leido)
+                .ToListAsync();
+
+            if (!mensajes.Any())
+            {
+                return NotFound("No hay mensajes no leídos para este grupo.");
+            }
+
+            foreach (var mensaje in mensajes)
+            {
+                mensaje.Leido = true;
+            }
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
 
         private bool MensajeExists(int id)
         {

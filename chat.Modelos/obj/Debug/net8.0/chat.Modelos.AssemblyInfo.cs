@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("chat.Modelos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e91c6dd195a198ef26c118468d316677607fa69")]
 [assembly: System.Reflection.AssemblyProductAttribute("chat.Modelos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("chat.Modelos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
