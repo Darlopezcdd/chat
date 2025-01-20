@@ -245,12 +245,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\mensajes\\c6fada0c-7ed6-473c-acf6-fc05e0b74b46.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\mensajes\\c6fada0c-7ed6-473c-acf6-fc05e0b74b46.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\mensajes\\ddd89c39-5224-41a1-89cd-99de187819b7.pdf",
+      "PackagePath": "staticwebassets\\uploads\\mensajes\\ddd89c39-5224-41a1-89cd-99de187819b7.pdf"
+    },
+    {
       "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\0dbc8c93-1dca-4248-9c30-153a009c0e83.jpeg",
       "PackagePath": "staticwebassets\\uploads\\perfiles\\0dbc8c93-1dca-4248-9c30-153a009c0e83.jpeg"
     },
     {
       "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\439125b6-4e63-4235-a628-678ab122cb15.jpg",
       "PackagePath": "staticwebassets\\uploads\\perfiles\\439125b6-4e63-4235-a628-678ab122cb15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\51e0578d-4927-427d-a4f5-01a15d362e82.gif",
+      "PackagePath": "staticwebassets\\uploads\\perfiles\\51e0578d-4927-427d-a4f5-01a15d362e82.gif"
     },
     {
       "Id": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\wwwroot\\uploads\\perfiles\\75239b69-59e5-4191-8929-b637d99fe317.jpeg",

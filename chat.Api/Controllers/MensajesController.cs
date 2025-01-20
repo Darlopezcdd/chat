@@ -77,10 +77,26 @@ namespace chat.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Mensaje>> PostMensaje(Mensaje mensaje)
         {
-            _context.Mensaje.Add(mensaje);
-            await _context.SaveChangesAsync();
+            try
+            {
+                Console.WriteLine($"Mensaje recibido: {System.Text.Json.JsonSerializer.Serialize(mensaje)}");
 
-            return CreatedAtAction("GetMensaje", new { id = mensaje.Id }, mensaje);
+                // Verificar si UrlArchivo llega correctamente
+                if (string.IsNullOrEmpty(mensaje.UrlArchivo))
+                {
+                    Console.WriteLine("Advertencia: UrlArchivo no se recibió.");
+                }
+
+                _context.Mensaje.Add(mensaje);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetMensaje", new { id = mensaje.Id }, mensaje);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en PostMensaje: {ex.Message}");
+                return StatusCode(500, "Error interno del servidor.");
+            }
         }
 
         // DELETE: api/Mensajes/5

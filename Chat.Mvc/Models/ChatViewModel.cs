@@ -17,7 +17,8 @@ namespace Chat.Mvc.Models
         public string Contenido { get; set; }
         public DateTime FechaEnvio { get; set; }
         public string NombreRemitente { get; set; } 
-        public string NombreDestinatario { get; set; } 
+        public string NombreDestinatario { get; set; }
+        public string? UrlArchivo { get; set; }
 
     }
 

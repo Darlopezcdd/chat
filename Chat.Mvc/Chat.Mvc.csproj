@@ -14,4 +14,8 @@
     <ProjectReference Include="..\chat.Modelos\chat.Modelos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\mensajes\" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,5 @@
 ﻿@model Chat.Mvc.Models.ChatViewModel
 <div class="chat-container">
-    <!-- Barra lateral -->
     <div class="sidebar">
         <h4>Seleccionar Usuario Activo</h4>
         <form asp-action="Index" method="get">
@@ -28,23 +27,16 @@
             </div>
         </form>
 
-
-
-
         <h4>Chats</h4>
         <ul>
-           
-                @foreach (var user in Model.Usuarios.Where(u => u.Id != Model.UsuarioActivoId))
-
-                {
-                    <li>
-                        <a href="@Url.Action("Index", "Mensajes", new { usuarioActivoId = Model.UsuarioActivoId, usuarioSeleccionadoId = user.Id })">
-                            @user.Name
-                        </a>
-                    </li>
-                }
-
-
+            @foreach (var user in Model.Usuarios.Where(u => u.Id != Model.UsuarioActivoId))
+            {
+                <li>
+                    <a href="@Url.Action("Index", "Mensajes", new { usuarioActivoId = Model.UsuarioActivoId, usuarioSeleccionadoId = user.Id })">
+                        @user.Name
+                    </a>
+                </li>
+            }
 
             <h5>Grupos</h5>
             @if (!Model.Grupos.Any())
@@ -66,12 +58,23 @@
                     }
                 </ul>
             }
-
         </ul>
     </div>
+
     <div class="chat-messages">
+        @{
+            Func<string, bool> esImagen = url =>
+
+            {
+
+                var extensionesValidas = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+
+                return !string.IsNullOrEmpty(url) && extensionesValidas.Any(e => url.EndsWith(e, StringComparison.OrdinalIgnoreCase));
+
+            };
+        }
+
         <div class="messages">
-            <h2>Mensajes</h2>
             @if (!Model.Mensajes.Any())
             {
                 <div class="alert alert-warning">
@@ -83,30 +86,44 @@
                 <ul>
                     @foreach (var mensaje in Model.Mensajes)
                     {
-                        <li>
-                            <strong>De:</strong> @mensaje.NombreRemitente <br />
-                            <strong>Para:</strong> @mensaje.NombreDestinatario <br />
-                            <p>@mensaje.Contenido</p>
-                            <span>@mensaje.FechaEnvio</span>
-                        </li>
+
+                        var esRemitente = mensaje.NombreRemitente == Model.Usuarios.FirstOrDefault(u => u.Id == Model.UsuarioActivoId)?.Name;
+
+                        <div class="message @(esRemitente ? "sent" : "received")">
+                            <div class="message-content">
+                                <p>@mensaje.Contenido</p>
+                                @if (!string.IsNullOrEmpty(mensaje.UrlArchivo))
+
+                                {
+                                    @if (esImagen(mensaje.UrlArchivo))
+                                    {
+                                        <img src="@mensaje.UrlArchivo" alt="Imagen Adjunta" class="message-image" />
+                                    }
+                                    else
+                                    {
+                                        <a href="@mensaje.UrlArchivo" target="_blank" class="message-file">Descargar Archivo</a>
+                                    }
+                                }
+                                <span class="message-time">@mensaje.FechaEnvio</span>
+                            </div>
+                        </div>
                     }
                 </ul>
             }
         </div>
-
         <div class="message-input">
             <form asp-action="Create" method="get">
                 <input type="hidden" name="UserRemitenteId" value="@Model.UsuarioActivoId" />
-                
-              
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
+
+   
 </div>
+
 @section Scripts {
     <script>
-
         const messagesDiv = document.querySelector('.messages');
         messagesDiv.scrollTop = messagesDiv.scrollHeight;
     </script>
@@ -119,6 +136,7 @@
         border: 1px solid #ccc;
         border-radius: 10px;
         overflow: hidden;
+        font-family: Arial, sans-serif;
     }
 
     .sidebar {
@@ -126,77 +144,110 @@
         background: #f8f9fa;
         padding: 15px;
         border-right: 1px solid #ccc;
-    }
-
-    .sidebar h4 {
-        margin-bottom: 10px;
-    }
-
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .sidebar ul li {
-        margin-bottom: 10px;
-    }
-
-    .sidebar ul li a {
-        text-decoration: none;
-        color: #007bff;
+        overflow-y: auto;
     }
 
     .chat-messages {
-        width: 70%;
+        flex: 1;
         display: flex;
         flex-direction: column;
+        background: #ffffff;
+        overflow-y: auto;
+        position: relative;
     }
 
     .messages {
         flex: 1;
-        padding: 15px;
         overflow-y: auto;
-        background: #e9ecef;
+        padding: 10px;
     }
 
     .message {
+        position: relative;
+        max-width: 50%;
+        padding: 15px;
+        border-radius: 25px;
         margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        max-width: 60%;
+        word-wrap: break-word;
     }
 
-    .message.sent {
-        background: #007bff;
-        color: white;
-        align-self: flex-end;
+        .message.sent {
+            background-color: #007bff;
+            color: white;
+            margin-left: auto; 
+        }
+
+        .message.received {
+            background-color: #e9ecef;
+            color: black;
+            margin-right: auto; 
+        }
+
+    .message-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
-    .message.received {
-        background: #f1f1f1;
-        align-self: flex-start;
+    .message.sent .message-time {
+        color: white; 
+    }
+
+    .message-image {
+        border-radius: 10px;
+        max-width: none; 
+        max-height: none;
+        width: auto;
+        height: auto; 
+    }
+
+    .message-file, .message-image {
+        margin-top: 5px;
+    }
+
+    .message-content > :not(:last-child):not(.message-file):not(.message-image) {
+        margin-bottom: 0;
+    }
+
+    .message-content .message-time {
+        margin-top: 5px; 
+    }
+    .message-file {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .message-file:hover {
+            text-decoration: underline;
+        }
+
+    .message-time {
+        font-size: 12px;
+        color: gray;
+        text-align: right;
     }
 
     .message-input {
         display: flex;
-        padding: 10px;
+        padding: 11px;
         background: #f8f9fa;
         border-top: 1px solid #ccc;
     }
 
-    .message-input input[type="text"] {
-        flex: 1;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin-right: 10px;
-    }
+        .message-input button {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 10px;
+        }
 
-    .message-input button {
-        padding: 10px 20px;
-        border: none;
-        background: #007bff;
-        color: white;
-        border-radius: 5px;
-    }
+            .message-input button:hover {
+                padding: 10px 20px;
+                border: none;
+                background: #007bff;
+                color: white;
+                border-radius: 5px;
+            }
 </style>

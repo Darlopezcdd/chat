@@ -15,6 +15,7 @@ namespace Chat.Mvc.Controllers
         {
             _chatApiProxy = chatApiProxy;
         }
+
         [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         public async Task<IActionResult> Index(int usuarioActivoId = 0, int? usuarioSeleccionadoId = null, int? grupoId = null)
         {
@@ -35,7 +36,7 @@ namespace Chat.Mvc.Controllers
             chatViewModel.UsuarioActivoId = usuarioActivoId;
             chatViewModel.UsuarioSeleccionadoId = usuarioSeleccionadoId;
 
-            // Filtrar mensajes según usuario o grupo
+
             List<Mensaje> mensajesFiltrados;
             if (grupoId.HasValue)
             {
@@ -48,7 +49,8 @@ namespace Chat.Mvc.Controllers
                         (m.UserRemitenteId == usuarioActivoId && m.UserDestinatarioId == usuarioSeleccionadoId) ||
                         (m.UserRemitenteId == usuarioSeleccionadoId && m.UserDestinatarioId == usuarioActivoId))
                     .ToList();
-            }
+            
+        }
             else
             {
                 mensajesFiltrados = new List<Mensaje>();
@@ -62,7 +64,8 @@ namespace Chat.Mvc.Controllers
                     Contenido = m.Contenido,
                     FechaEnvio = m.FechaEnvio,
                     NombreRemitente = usuarios.FirstOrDefault(u => u.Id == m.UserRemitenteId)?.Name ?? "Desconocido",
-                    NombreDestinatario = usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido"
+                    NombreDestinatario = usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido",
+                    UrlArchivo = m.UrlArchivo // Ruta del archivo si existe
                 })
                 .ToList();
 
@@ -75,28 +78,15 @@ namespace Chat.Mvc.Controllers
                 }
             }
 
-
             await _chatApiProxy.MarcarMensajesComoLeidosAsync(mensajesFiltrados);
 
             return View(chatViewModel);
         }
 
-
-
-
-
-
-
         public IActionResult Create(int remitenteId)
         {
-            // Llama al método del proxy para obtener usuarios.
             var usuarios = _chatApiProxy.GetUsersAsync().Result;
 
-            // Imprime los usuarios para depuración.
-            Console.WriteLine("Usuarios cargados desde la API:");
-            Console.WriteLine(JsonConvert.SerializeObject(usuarios));
-
-            // Pasa los usuarios al ViewBag para la vista.
             ViewBag.UserRemitenteId = new SelectList(usuarios, "Id", "Name");
             ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name");
 
@@ -107,41 +97,47 @@ namespace Chat.Mvc.Controllers
 
             return View(mensaje);
         }
-
-
         [HttpPost]
-        public async Task<IActionResult> Create(Mensaje mensaje)
+        public async Task<IActionResult> Create(Mensaje mensaje, IFormFile? archivoAdjunto)
         {
             if (ModelState.IsValid)
             {
-                mensaje.FechaEnvio = DateTime.Now;
-
-  
-                Console.WriteLine($"Enviando mensaje desde el controlador: {JsonConvert.SerializeObject(mensaje)}");
-
-                var success = await _chatApiProxy.CreateMensajeAsync(mensaje);
-                if (success)
+                try
                 {
-                    return RedirectToAction("Index", new { userId = mensaje.UserRemitenteId });
+                    // Validar y guardar el archivo
+                    if (archivoAdjunto != null && archivoAdjunto.Length > 0)
+                    {
+                        var uploadPath = Path.Combine("wwwroot/uploads/mensajes");
+                        var fileName = await FileHelper.SaveFileAsync(archivoAdjunto, uploadPath);
+                        mensaje.UrlArchivo = $"/uploads/mensajes/{fileName}";
+
+                        Console.WriteLine($"Archivo guardado: {mensaje.UrlArchivo}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se recibió ningún archivo o está vacío.");
+                    }
+
+                    mensaje.FechaEnvio = DateTime.Now;
+
+                    // Enviar mensaje al proxy
+                    var success = await _chatApiProxy.CreateMensajeAsync(mensaje);
+                    if (success)
+                    {
+                        return RedirectToAction("Index", new { usuarioActivoId = mensaje.UserRemitenteId });
+                    }
+
+                    ModelState.AddModelError("", "Error al enviar el mensaje a través del proxy.");
                 }
-                ModelState.AddModelError("", "Error al enviar el mensaje a través del proxy.");
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error: {ex.Message}");
+                    Console.WriteLine($"Error en Create: {ex.Message}");
+                }
             }
 
             return View(mensaje);
         }
-        //[HttpPost]
-        //public void LoadUsers()
-        //{
-        //    Obtener la lista de usuarios desde el proxy
-        //    var usuarios = _chatApiProxy.GetUsersAsync().Result;
 
-        //    Actualizar el ViewBag con los usuarios
-        //    ViewBag.UserRemitenteId = new SelectList(usuarios, "Id", "Name");
-        //    ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name");
-
-        //    Devolver la vista actualizada
-        //    var mensaje = new Mensaje(); // Modelo vacío o prellenado si es necesario
-
-        //}
     }
 }

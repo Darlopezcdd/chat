@@ -60,20 +60,30 @@ public class ChatApiProxy : IChatApiProxy
     {
         try
         {
-            var content = new StringContent(JsonConvert.SerializeObject(mensaje), Encoding.UTF8, "application/json");
-            Console.WriteLine($"JSON enviado al proxy: {JsonConvert.SerializeObject(mensaje)}");
+            var jsonData = JsonConvert.SerializeObject(mensaje);
+            Console.WriteLine($"JSON enviado al proxy: {jsonData}");
 
+            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync("Mensajes", content);
 
-            Console.WriteLine($"Response Status Code: {response.StatusCode}");
-            return response.IsSuccessStatusCode;
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Mensaje enviado correctamente.");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine($"Error al enviar mensaje. Código: {response.StatusCode}");
+                return false;
+            }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error en el proxy: {ex.Message}");
+            Console.WriteLine($"Error en CreateMensajeAsync: {ex.Message}");
             return false;
         }
     }
+
     public async Task<bool> CheckNewMessagesAsync()
     {
         var response = await _httpClient.GetAsync("Mensajes/NuevosMensajes");
@@ -100,7 +110,7 @@ public class ChatApiProxy : IChatApiProxy
     {
         try
         {
-   
+
             var response = await _httpClient.GetAsync("Grupos");
             response.EnsureSuccessStatusCode();
 
@@ -111,7 +121,7 @@ public class ChatApiProxy : IChatApiProxy
             if (grupos == null || grupos.Count == 0)
             {
                 Console.WriteLine("No se encontraron grupos disponibles.");
-                return new List<Grupo>(); 
+                return new List<Grupo>();
             }
 
             return grupos;
@@ -123,12 +133,12 @@ public class ChatApiProxy : IChatApiProxy
         }
         catch (JsonException ex)
         {
-      
+
             Console.WriteLine($"Error al procesar la respuesta de la API: {ex.Message}");
         }
         catch (Exception ex)
         {
-  
+
             Console.WriteLine($"Error inesperado: {ex.Message}");
         }
 
@@ -182,7 +192,3 @@ public class ChatApiProxy : IChatApiProxy
 
 
 }
-
-
-
-

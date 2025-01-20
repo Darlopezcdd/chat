@@ -1,7 +1,13 @@
 ﻿@model chat.Modelos.Mensaje
 
 <h1>Enviar Mensaje</h1>
-<form asp-action="Create" method="post">
+<form asp-action="Create" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label asp-for="UrlArchivo" class="control-label">Archivo</label>
+        <input asp-for="UrlArchivo" class="form-control" type="file" name="archivoAdjunto" />
+        <span asp-validation-for="UrlArchivo" class="text-danger"></span>
+
+    </div>
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="UserRemitenteId" class="control-label">Remitente</label>
@@ -21,8 +27,9 @@
         <label for="Contenido">Contenido del Mensaje</label>
         <textarea class="form-control" asp-for="Contenido" required></textarea>
     </div>
-   
-    <button type="submit" class="btn btn-success">Enviar</button>
+ 
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
     <a href="@Url.Action("Index", "Mensajes")" class="btn btn-secondary">Cancelar</a>
 </form>
 
