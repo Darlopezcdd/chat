@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\mensajes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\mensajes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\mensajes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\mensajes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,32 +11,20 @@
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\mensajes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\mensajes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\controllers\\grupoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\grupoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\grupos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\grupos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\chat.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\chat.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\models\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\models\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\controllers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\proxies\\chatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\proxies\\chatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,8 +35,36 @@
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\mensajes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\mensajes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\mensajes\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\mensajes\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\grupos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\grupos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\grupos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\grupos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\proxies\\ichatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\proxies\\ichatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\proxies\\chatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\proxies\\chatapiproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\models\\usuariosygruposviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,6 +73,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\models\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\models\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\controllers\\gruposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\gruposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\controllers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\controllers\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EC6ACD2-3724-42F3-B216-DA5AB19F481E}|chat.Modelos\\chat.Modelos.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.modelos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,6 +107,10 @@
       "RelativeMoniker": "D:0:0:{4EC6ACD2-3724-42F3-B216-DA5AB19F481E}|chat.Modelos\\chat.Modelos.csproj|solutionrelative:chat.modelos\\grupo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -87,32 +119,24 @@
       "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\notificacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\controllers\\grupoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\grupoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E071B8EC-1183-42B6-972F-F4438240501E}|Chat.Mvc\\Chat.Mvc.csproj|solutionrelative:chat.mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\chat.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\chat.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59ACF3C3-FD86-4FC1-91F4-D6A76C9DDDC7}|chat.Api\\chat.Api.csproj|solutionrelative:chat.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EC6ACD2-3724-42F3-B216-DA5AB19F481E}|chat.Modelos\\chat.Modelos.csproj|c:\\users\\lopez\\source\\repos\\chat-main\\chat.modelos\\chat.modelos\\chat.modelos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -156,7 +180,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -176,19 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MensajesController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\MensajesController.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\MensajesController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\MensajesController.cs",
-              "RelativeToolTip": "Chat.Mvc\\Controllers\\MensajesController.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAYwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T03:20:15.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Details.cshtml",
               "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Users\\Details.cshtml",
@@ -196,312 +208,90 @@
               "RelativeToolTip": "Chat.Mvc\\Views\\Users\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T23:20:22.256Z"
+              "WhenOpened": "2025-01-11T23:20:22.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Users\\Create.cshtml",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "Chat.Mvc\\Views\\Users\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T20:28:21.399Z"
+              "WhenOpened": "2025-01-11T23:19:53.131Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MensajesController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\MensajesController.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\MensajesController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\MensajesController.cs*",
+              "RelativeToolTip": "Chat.Mvc\\Controllers\\MensajesController.cs*",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAUwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:20:15.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Index.cshtml",
               "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Mensajes\\Index.cshtml",
               "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Index.cshtml",
               "RelativeToolTip": "Chat.Mvc\\Views\\Mensajes\\Index.cshtml",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-12T03:25:02.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
-              "RelativeToolTip": "Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Grupos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Index.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Grupos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T03:25:47.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IChatApiProxy.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\IChatApiProxy.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Proxies\\IChatApiProxy.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\IChatApiProxy.cs",
-              "RelativeToolTip": "Chat.Mvc\\Proxies\\IChatApiProxy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T22:16:43.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Chat.Mvc\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwFEAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T23:18:37.511Z"
+              "WhenOpened": "2025-01-23T15:16:17.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FileHelper.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\FileHelper.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\FileHelper.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\FileHelper.cs",
-              "RelativeToolTip": "Chat.Mvc\\Controllers\\FileHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:18:42.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChatViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ChatViewModel.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\ChatViewModel.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ChatViewModel.cs",
-              "RelativeToolTip": "Chat.Mvc\\Models\\ChatViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T03:07:40.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Users\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "Chat.Mvc\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBcAAAB1AAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T23:19:53.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "chat.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\chat.Api.csproj",
-              "RelativeDocumentMoniker": "chat.Api\\chat.Api.csproj",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\chat.Api.csproj",
-              "RelativeToolTip": "chat.Api\\chat.Api.csproj",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-14T13:30:04.69Z"
+              "WhenOpened": "2025-01-17T20:28:21.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "MensajesController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\MensajesController.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Controllers\\MensajesController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\MensajesController.cs",
-              "RelativeToolTip": "chat.Api\\Controllers\\MensajesController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAwGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:54:28.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChatApiProxy.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\ChatApiProxy.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Proxies\\ChatApiProxy.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\ChatApiProxy.cs",
-              "RelativeToolTip": "Chat.Mvc\\Proxies\\ChatApiProxy.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T22:59:02.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20250119023114_V02.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250119023114_V02.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Migrations\\20250119023114_V02.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250119023114_V02.cs",
-              "RelativeToolTip": "chat.Api\\Migrations\\20250119023114_V02.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T02:31:14.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UsuariosYGruposViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
-              "RelativeToolTip": "Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T08:25:11.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Chat.Mvc\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T22:45:47.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\User.cs",
-              "RelativeDocumentMoniker": "chat.Modelos\\User.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\User.cs",
-              "RelativeToolTip": "chat.Modelos\\User.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T05:25:39.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Notificacion.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Notificacion.cs",
-              "RelativeDocumentMoniker": "chat.Modelos\\Notificacion.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Notificacion.cs",
-              "RelativeToolTip": "chat.Modelos\\Notificacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T05:34:51.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Mensaje.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Mensaje.cs",
-              "RelativeDocumentMoniker": "chat.Modelos\\Mensaje.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Mensaje.cs",
-              "RelativeToolTip": "chat.Modelos\\Mensaje.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T05:27:08.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Grupo.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Grupo.cs",
-              "RelativeDocumentMoniker": "chat.Modelos\\Grupo.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Grupo.cs",
-              "RelativeToolTip": "chat.Modelos\\Grupo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T05:33:23.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "chat.Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAADwv50AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:55:01.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NotificacionsController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\NotificacionsController.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Controllers\\NotificacionsController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\NotificacionsController.cs",
-              "RelativeToolTip": "chat.Api\\Controllers\\NotificacionsController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwEAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:55:32.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GrupoesController.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\GrupoesController.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Controllers\\GrupoesController.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\GrupoesController.cs",
-              "RelativeToolTip": "chat.Api\\Controllers\\GrupoesController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:56:03.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "chat.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\appsettings.json",
-              "RelativeToolTip": "chat.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-18T19:26:18.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20250118192636_v01.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250118192636_v01.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Migrations\\20250118192636_v01.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250118192636_v01.cs",
-              "RelativeToolTip": "chat.Api\\Migrations\\20250118192636_v01.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T19:26:37.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Chat.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAcwFsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T05:03:37.367Z"
+              "WhenOpened": "2025-01-12T05:03:37.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Program.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Program.cs",
-              "RelativeToolTip": "chat.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T06:06:01.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 9,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -509,11 +299,311 @@
               "RelativeToolTip": "Chat.Mvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T22:47:13.784Z"
+              "WhenOpened": "2025-01-17T22:47:13.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GrupoesController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\GrupoesController.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Controllers\\GrupoesController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\GrupoesController.cs",
+              "RelativeToolTip": "chat.Api\\Controllers\\GrupoesController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwBwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:56:03.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Mensajes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Create.cshtml*",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Mensajes\\Create.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T03:25:47.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Mensajes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\Edit.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Mensajes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T21:53:15.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfirmDelete.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\ConfirmDelete.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Mensajes\\ConfirmDelete.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Mensajes\\ConfirmDelete.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Mensajes\\ConfirmDelete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T21:53:58.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Grupos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Details.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Grupos\\Details.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T23:39:15.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Grupos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Grupos\\Create.cshtml",
+              "RelativeToolTip": "Chat.Mvc\\Views\\Grupos\\Create.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-24T21:24:10.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IChatApiProxy.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\IChatApiProxy.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Proxies\\IChatApiProxy.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\IChatApiProxy.cs",
+              "RelativeToolTip": "Chat.Mvc\\Proxies\\IChatApiProxy.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T22:16:43.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatApiProxy.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\ChatApiProxy.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Proxies\\ChatApiProxy.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Proxies\\ChatApiProxy.cs",
+              "RelativeToolTip": "Chat.Mvc\\Proxies\\ChatApiProxy.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAiwGYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T22:59:02.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsuariosYGruposViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
+              "RelativeToolTip": "Chat.Mvc\\Models\\UsuariosYGruposViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T08:25:11.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Chat.Mvc\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T22:45:47.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChatViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ChatViewModel.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Models\\ChatViewModel.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Models\\ChatViewModel.cs",
+              "RelativeToolTip": "Chat.Mvc\\Models\\ChatViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T03:07:40.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Chat.Mvc\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T23:18:37.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GruposController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\GruposController.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\GruposController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\GruposController.cs",
+              "RelativeToolTip": "Chat.Mvc\\Controllers\\GruposController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAiwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:50:39.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\FileHelper.cs",
+              "RelativeDocumentMoniker": "Chat.Mvc\\Controllers\\FileHelper.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Controllers\\FileHelper.cs",
+              "RelativeToolTip": "Chat.Mvc\\Controllers\\FileHelper.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:18:42.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\User.cs",
+              "RelativeDocumentMoniker": "chat.Modelos\\User.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\User.cs",
+              "RelativeToolTip": "chat.Modelos\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T05:25:39.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Notificacion.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Notificacion.cs",
+              "RelativeDocumentMoniker": "chat.Modelos\\Notificacion.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Notificacion.cs",
+              "RelativeToolTip": "chat.Modelos\\Notificacion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T05:34:51.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Mensaje.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Mensaje.cs",
+              "RelativeDocumentMoniker": "chat.Modelos\\Mensaje.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Mensaje.cs",
+              "RelativeToolTip": "chat.Modelos\\Mensaje.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T05:27:08.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "Grupo.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Grupo.cs",
+              "RelativeDocumentMoniker": "chat.Modelos\\Grupo.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\Grupo.cs",
+              "RelativeToolTip": "chat.Modelos\\Grupo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T05:33:23.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Program.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Program.cs",
+              "RelativeToolTip": "chat.Api\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAiwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T06:06:01.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "chat.Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAUwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:55:01.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NotificacionsController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\NotificacionsController.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Controllers\\NotificacionsController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\NotificacionsController.cs",
+              "RelativeToolTip": "chat.Api\\Controllers\\NotificacionsController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:55:32.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MensajesController.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\MensajesController.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Controllers\\MensajesController.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Controllers\\MensajesController.cs",
+              "RelativeToolTip": "chat.Api\\Controllers\\MensajesController.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAUwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:54:28.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "dbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Data\\dbContext.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Data\\dbContext.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Data\\dbContext.cs",
+              "RelativeToolTip": "chat.Api\\Data\\dbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvyYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:45:57.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Chat.Mvc\\Views\\Shared\\Error.cshtml",
@@ -525,19 +615,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "dbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Data\\dbContext.cs",
-              "RelativeDocumentMoniker": "chat.Api\\Data\\dbContext.cs",
-              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Data\\dbContext.cs",
-              "RelativeToolTip": "chat.Api\\Data\\dbContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:45:57.786Z"
+              "DocumentIndex": 32,
+              "Title": "chat.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\chat.Api.csproj",
+              "RelativeDocumentMoniker": "chat.Api\\chat.Api.csproj",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\chat.Api.csproj",
+              "RelativeToolTip": "chat.Api\\chat.Api.csproj",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-14T13:30:04.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 43,
+              "Title": "20250119023114_V02.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250119023114_V02.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Migrations\\20250119023114_V02.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250119023114_V02.cs",
+              "RelativeToolTip": "chat.Api\\Migrations\\20250119023114_V02.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T02:31:14.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "chat.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\appsettings.json",
+              "RelativeToolTip": "chat.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-18T19:26:18.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250118192636_v01.cs",
+              "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250118192636_v01.cs",
+              "RelativeDocumentMoniker": "chat.Api\\Migrations\\20250118192636_v01.cs",
+              "ToolTip": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Api\\Migrations\\20250118192636_v01.cs",
+              "RelativeToolTip": "chat.Api\\Migrations\\20250118192636_v01.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:26:37.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "chat.Modelos.csproj",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\chat.Modelos\\chat.Modelos.csproj",
               "RelativeDocumentMoniker": "chat.Modelos\\chat.Modelos.csproj",
@@ -549,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lopez\\source\\repos\\Chat-main\\chat.Modelos\\Chat.Mvc\\Program.cs",
               "RelativeDocumentMoniker": "Chat.Mvc\\Program.cs",
@@ -561,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "20250111213334_V05.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111213334_V05.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111213334_V05.cs",
@@ -570,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "20250111072418_V02.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111072418_V02.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111072418_V02.cs",
@@ -579,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "20250111065253_V01.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111065253_V01.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111065253_V01.cs",
@@ -588,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "20250111211809_V04.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111211809_V04.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111211809_V04.cs",
@@ -597,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "20250111205655_V03.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111205655_V03.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111205655_V03.cs",
@@ -606,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "20250111070806_V01.cs",
               "DocumentMoniker": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111070806_V01.cs",
               "ToolTip": "D:\\chat\\chat.Modelos\\chat.Api\\Migrations\\20250111070806_V01.cs",

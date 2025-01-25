@@ -13,6 +13,43 @@ public class ChatApiProxy : IChatApiProxy
         _httpClient = httpClient;
     }
 
+    public async Task<bool> CreateGrupoAsync(Grupo grupo)
+    {
+        try
+        {
+            var payload = new
+            {
+                Id = grupo.Id,
+                Name = grupo.Name,
+                FechaCreacion = grupo.FechaCreacion,
+                Users = grupo.Users.Select(u => new { u.Id, u.Name }).ToList()
+            };
+
+            var jsonPayload = JsonConvert.SerializeObject(payload, Formatting.Indented);
+            Console.WriteLine("JSON enviado desde el proxy al backend:");
+            Console.WriteLine(jsonPayload);
+
+            var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("Grupoes", content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Error al enviar la solicitud: {response.StatusCode} - {response.ReasonPhrase}");
+            }
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en CreateGrupoAsync: {ex.Message}");
+            return false;
+        }
+    }
+
+
+
+
+
     public async Task<List<User>> GetUsersAsync()
     {
         try
@@ -105,47 +142,78 @@ public class ChatApiProxy : IChatApiProxy
             return false;
         }
     }
-
     public async Task<List<Grupo>> GetGruposAsync()
     {
         try
         {
-
-            var response = await _httpClient.GetAsync("Grupos");
+            var response = await _httpClient.GetAsync("Grupoes"); 
             response.EnsureSuccessStatusCode();
 
-
             var content = await response.Content.ReadAsStringAsync();
-            var grupos = JsonConvert.DeserializeObject<List<Grupo>>(content);
-
-            if (grupos == null || grupos.Count == 0)
-            {
-                Console.WriteLine("No se encontraron grupos disponibles.");
-                return new List<Grupo>();
-            }
-
-            return grupos;
-        }
-        catch (HttpRequestException ex)
-        {
-
-            Console.WriteLine($"Error al obtener grupos: {ex.Message}");
-        }
-        catch (JsonException ex)
-        {
-
-            Console.WriteLine($"Error al procesar la respuesta de la API: {ex.Message}");
+            return JsonConvert.DeserializeObject<List<Grupo>>(content) ?? new List<Grupo>();
         }
         catch (Exception ex)
         {
-
-            Console.WriteLine($"Error inesperado: {ex.Message}");
+            Console.WriteLine($"Error en GetGruposAsync: {ex.Message}");
+            return new List<Grupo>(); 
         }
-
-
-        Console.WriteLine("No se pudieron cargar los grupos debido a un error.");
-        return new List<Grupo>();
     }
+    public async Task<bool> DeleteGrupoAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.DeleteAsync($"Grupoes/{id}");
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en DeleteGrupoAsync: {ex.Message}");
+            return false;
+        }
+    }
+
+
+
+    //public async Task<List<Grupo>> GetGruposAsync()
+    //{
+    //    try
+    //    {
+
+    //        var response = await _httpClient.GetAsync("Grupos");
+    //        response.EnsureSuccessStatusCode();
+
+
+    //        var content = await response.Content.ReadAsStringAsync();
+    //        var grupos = JsonConvert.DeserializeObject<List<Grupo>>(content);
+
+    //        if (grupos == null || grupos.Count == 0)
+    //        {
+    //            Console.WriteLine("No se encontraron grupos disponibles.");
+    //            return new List<Grupo>();
+    //        }
+
+    //        return grupos;
+    //    }
+    //    catch (HttpRequestException ex)
+    //    {
+
+    //        Console.WriteLine($"Error al obtener grupos: {ex.Message}");
+    //    }
+    //    catch (JsonException ex)
+    //    {
+
+    //        Console.WriteLine($"Error al procesar la respuesta de la API: {ex.Message}");
+    //    }
+    //    catch (Exception ex)
+    //    {
+
+    //        Console.WriteLine($"Error inesperado: {ex.Message}");
+    //    }
+
+
+    //    Console.WriteLine("No se pudieron cargar los grupos debido a un error.");
+    //    return new List<Grupo>();
+    //}
 
     public async Task<bool> MarcarMensajesGrupoComoLeidosAsync(int grupoId)
     {
@@ -186,8 +254,105 @@ public class ChatApiProxy : IChatApiProxy
         }
     }
 
+    public async Task<Mensaje> GetMensajeByIdAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.GetAsync($"Mensajes/{id}");
+            response.EnsureSuccessStatusCode();
 
+            var content = await response.Content.ReadAsStringAsync();
+            var mensaje = JsonConvert.DeserializeObject<Mensaje>(content);
 
+            if (mensaje == null)
+            {
+                Console.WriteLine($"Mensaje con ID {id} no encontrado.");
+            }
+
+            return mensaje;
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"Error al obtener el mensaje con ID {id}: {ex.Message}");
+        }
+        catch (JsonException ex)
+        {
+            Console.WriteLine($"Error al procesar el mensaje con ID {id}: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error inesperado al obtener el mensaje con ID {id}: {ex.Message}");
+        }
+
+        return null; 
+    }
+
+    public async Task<bool> UpdateMensajeAsync(Mensaje mensaje)
+    {
+        try
+        {
+            var jsonData = JsonConvert.SerializeObject(mensaje);
+            var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"Mensajes/{mensaje.Id}", content);
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Error al actualizar el mensaje con ID {mensaje.Id}: {response.StatusCode} - {response.ReasonPhrase}");
+            }
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"Error de red al actualizar el mensaje con ID {mensaje.Id}: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error inesperado al actualizar el mensaje con ID {mensaje.Id}: {ex.Message}");
+        }
+
+        return false;
+    }
+    public async Task<bool> DeleteMensajeAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.DeleteAsync($"Mensajes/{id}");
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Error al eliminar el mensaje con ID {id}: {response.StatusCode} - {response.ReasonPhrase}");
+            }
+
+            return response.IsSuccessStatusCode;
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"Error de red al eliminar el mensaje con ID {id}: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error inesperado al eliminar el mensaje con ID {id}: {ex.Message}");
+        }
+
+        return false;
+    }
+
+    public async Task<Grupo> GetGrupoByIdAsync(int id)
+    {
+        try
+        {
+            var response = await _httpClient.GetAsync($"Grupoes/{id}");
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<Grupo>(content);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en GetGrupoByIdAsync: {ex.Message}");
+            return null;
+        }
+    }
 
 
 

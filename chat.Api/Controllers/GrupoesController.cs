@@ -22,24 +22,42 @@ namespace chat.Api.Controllers
 
         // GET: api/Grupoes
         [HttpGet]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Grupo>>> GetGrupo()
         {
-            return await _context.Grupo.ToListAsync();
+            return await _context.Grupo
+                .Include(g => g.Users) 
+                .ToListAsync();
         }
+
 
         // GET: api/Grupoes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Grupo>> GetGrupo(int id)
+        public async Task<IActionResult> GetGrupo(int id)
         {
-            var grupo = await _context.Grupo.FindAsync(id);
+            var grupo = await _context.Grupo
+                .Include(g => g.Users)
+                .Include(g => g.Mensajes)
+                .Where(g => g.Id == id)
+                .Select(g => new
+                {
+                    g.Id,
+                    g.Name,
+                    g.FechaCreacion,
+                    Users = g.Users.Select(u => new { u.Id, u.Name }),
+                    Mensajes = g.Mensajes.Select(m => new { m.Id, m.Contenido, m.FechaEnvio })
+                })
+                .FirstOrDefaultAsync();
 
             if (grupo == null)
             {
                 return NotFound();
             }
 
-            return grupo;
+            return Ok(grupo);
         }
+
+
 
         // PUT: api/Grupoes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -75,13 +93,39 @@ namespace chat.Api.Controllers
         // POST: api/Grupoes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Grupo>> PostGrupo(Grupo grupo)
+        public async Task<IActionResult> PostGrupo(Grupo grupo)
         {
-            _context.Grupo.Add(grupo);
-            await _context.SaveChangesAsync();
+            try
+            {
+                if (grupo.FechaCreacion == DateTime.MinValue)
+                {
+                    grupo.FechaCreacion = DateTime.Now; // Asignar la fecha actual si no se proporciona
+                }
 
-            return CreatedAtAction("GetGrupo", new { id = grupo.Id }, grupo);
+                // Obtener usuarios existentes si es necesario
+                if (grupo.Users != null && grupo.Users.Any())
+                {
+                    var userIds = grupo.Users.Select(u => u.Id).ToList();
+                    var usuariosExistentes = _context.User
+                        .Where(u => userIds.Contains(u.Id))
+                        .ToList();
+                    grupo.Users = usuariosExistentes;
+                }
+
+                _context.Grupo.Add(grupo);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction(nameof(GetGrupo), new { id = grupo.Id }, grupo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
+
+
+
+
 
         // DELETE: api/Grupoes/5
         [HttpDelete("{id}")]

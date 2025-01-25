@@ -18,8 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lopez\source\repos\Chat-main\chat.Modelos\Chat.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Grupos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Grupos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Grupos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Mensajes/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVuc2FqZXNcQ29uZmlybURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Mensajes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVuc2FqZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Mensajes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVuc2FqZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lopez/source/repos/Chat-main/chat.Modelos/Chat.Mvc/Views/Mensajes/Index.cshtml]

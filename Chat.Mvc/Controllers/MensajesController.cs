@@ -21,22 +21,29 @@ namespace Chat.Mvc.Controllers
         {
             if (usuarioActivoId == 0)
             {
-                usuarioActivoId = 1; // Usuario predefinido
+                usuarioActivoId = 1; // Usuario por defecto
             }
 
             var chatViewModel = new ChatViewModel();
 
-            // Obtener usuarios, grupos y mensajes
+            // Obtener todos los datos
             var usuarios = await _chatApiProxy.GetUsersAsync();
             var grupos = await _chatApiProxy.GetGruposAsync();
+
             var mensajes = await _chatApiProxy.GetMensajesAsync();
 
-            chatViewModel.Usuarios = usuarios;
-            chatViewModel.Grupos = grupos;
+            // Filtrar grupos en los que el usuario activo es miembro
+            var gruposFiltrados = grupos
+                .Where(g => g.Users != null && g.Users.Any(u => u.Id == usuarioActivoId))
+                .ToList();
+
+
+            chatViewModel.Usuarios = usuarios; // Todos los usuarios
+            chatViewModel.Grupos = gruposFiltrados; // Grupos filtrados según el usuario activo
             chatViewModel.UsuarioActivoId = usuarioActivoId;
             chatViewModel.UsuarioSeleccionadoId = usuarioSeleccionadoId;
 
-
+            // Filtrar mensajes
             List<Mensaje> mensajesFiltrados;
             if (grupoId.HasValue)
             {
@@ -49,14 +56,13 @@ namespace Chat.Mvc.Controllers
                         (m.UserRemitenteId == usuarioActivoId && m.UserDestinatarioId == usuarioSeleccionadoId) ||
                         (m.UserRemitenteId == usuarioSeleccionadoId && m.UserDestinatarioId == usuarioActivoId))
                     .ToList();
-            
-        }
+            }
             else
             {
                 mensajesFiltrados = new List<Mensaje>();
             }
 
-            // Mapear mensajes a MensajeConNombres
+            // Mapear mensajes
             chatViewModel.Mensajes = mensajesFiltrados
                 .Select(m => new MensajeConNombres
                 {
@@ -65,38 +71,52 @@ namespace Chat.Mvc.Controllers
                     FechaEnvio = m.FechaEnvio,
                     NombreRemitente = usuarios.FirstOrDefault(u => u.Id == m.UserRemitenteId)?.Name ?? "Desconocido",
                     NombreDestinatario = usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido",
-                    UrlArchivo = m.UrlArchivo // Ruta del archivo si existe
+                    UrlArchivo = m.UrlArchivo
                 })
                 .ToList();
-
-            // Actualizar atributo "Leido" a true para los mensajes mostrados
-            foreach (var mensaje in mensajesFiltrados)
+         
+            Console.WriteLine($"Total Grupos: {grupos.Count}");
+            foreach (var grupo in grupos)
             {
-                if (!mensaje.Leido)
-                {
-                    mensaje.Leido = true;
-                }
+                Console.WriteLine($"Grupo: {grupo.Name}, Usuarios: {grupo.Users?.Count ?? 0}");
             }
 
-            await _chatApiProxy.MarcarMensajesComoLeidosAsync(mensajesFiltrados);
 
             return View(chatViewModel);
         }
 
-        public IActionResult Create(int remitenteId)
-        {
-            var usuarios = _chatApiProxy.GetUsersAsync().Result;
 
-            ViewBag.UserRemitenteId = new SelectList(usuarios, "Id", "Name");
+        public async Task<IActionResult> Create(int remitenteId, int? grupoId = null)
+        {
+            var usuarios = await _chatApiProxy.GetUsersAsync();
+            var grupos = await _chatApiProxy.GetGruposAsync();
+
+            // Filtrar remitentes según el grupo seleccionado
+            List<User> remitentesFiltrados;
+            if (grupoId.HasValue)
+            {
+                var grupoSeleccionado = grupos.FirstOrDefault(g => g.Id == grupoId);
+                remitentesFiltrados = grupoSeleccionado?.Users ?? new List<User>();
+            }
+            else
+            {
+                remitentesFiltrados = usuarios;
+            }
+
+            ViewBag.UserRemitenteId = new SelectList(remitentesFiltrados, "Id", "Name");
             ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name");
+            ViewBag.GrupoId = new SelectList(grupos, "Id", "Name");
 
             var mensaje = new Mensaje
             {
-                UserRemitenteId = remitenteId
+                UserRemitenteId = remitenteId,
+                GrupoId = grupoId
             };
 
             return View(mensaje);
         }
+
+
         [HttpPost]
         public async Task<IActionResult> Create(Mensaje mensaje, IFormFile? archivoAdjunto)
         {
@@ -110,12 +130,6 @@ namespace Chat.Mvc.Controllers
                         var uploadPath = Path.Combine("wwwroot/uploads/mensajes");
                         var fileName = await FileHelper.SaveFileAsync(archivoAdjunto, uploadPath);
                         mensaje.UrlArchivo = $"/uploads/mensajes/{fileName}";
-
-                        Console.WriteLine($"Archivo guardado: {mensaje.UrlArchivo}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("No se recibió ningún archivo o está vacío.");
                     }
 
                     mensaje.FechaEnvio = DateTime.Now;
@@ -127,17 +141,77 @@ namespace Chat.Mvc.Controllers
                         return RedirectToAction("Index", new { usuarioActivoId = mensaje.UserRemitenteId });
                     }
 
-                    ModelState.AddModelError("", "Error al enviar el mensaje a través del proxy.");
+                    ModelState.AddModelError("", "Error al enviar el mensaje.");
                 }
                 catch (Exception ex)
                 {
                     ModelState.AddModelError("", $"Error: {ex.Message}");
-                    Console.WriteLine($"Error en Create: {ex.Message}");
                 }
             }
 
+            // Recargar listas en caso de error
+            var usuarios = await _chatApiProxy.GetUsersAsync();
+            var grupos = await _chatApiProxy.GetGruposAsync();
+
+            // Actualizar listas según el grupo seleccionado
+            var remitentesFiltrados = mensaje.GrupoId.HasValue
+                ? grupos.FirstOrDefault(g => g.Id == mensaje.GrupoId)?.Users ?? new List<User>()
+                : usuarios;
+
+            ViewBag.UserRemitenteId = new SelectList(remitentesFiltrados, "Id", "Name", mensaje.UserRemitenteId);
+            ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name", mensaje.UserDestinatarioId);
+            ViewBag.GrupoId = new SelectList(grupos, "Id", "Name", mensaje.GrupoId);
+
             return View(mensaje);
         }
+
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var mensaje = await _chatApiProxy.GetMensajeByIdAsync(id);
+            if (mensaje == null)
+            {
+                return NotFound();
+            }
+            return View(mensaje);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Mensaje mensaje)
+        {
+            if (ModelState.IsValid)
+            {
+                var success = await _chatApiProxy.UpdateMensajeAsync(mensaje);
+                if (success)
+                {
+                    return RedirectToAction("Index", new { usuarioActivoId = mensaje.UserRemitenteId });
+                }
+                ModelState.AddModelError("", "Error al actualizar el mensaje.");
+            }
+            return View(mensaje);
+        }
+        public async Task<IActionResult> ConfirmDelete(int id)
+        {
+            var mensaje = await _chatApiProxy.GetMensajeByIdAsync(id);
+            if (mensaje == null)
+            {
+                return NotFound();
+            }
+            return View(mensaje);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var success = await _chatApiProxy.DeleteMensajeAsync(id);
+            if (success)
+            {
+                return RedirectToAction("Index");
+            }
+            TempData["Error"] = "Error al eliminar el mensaje.";
+            return RedirectToAction("ConfirmDelete", new { id });
+        }
+
 
     }
 }
