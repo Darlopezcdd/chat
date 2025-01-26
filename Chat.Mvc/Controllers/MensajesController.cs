@@ -70,17 +70,19 @@ namespace Chat.Mvc.Controllers
                     Contenido = m.Contenido,
                     FechaEnvio = m.FechaEnvio,
                     NombreRemitente = usuarios.FirstOrDefault(u => u.Id == m.UserRemitenteId)?.Name ?? "Desconocido",
-                    NombreDestinatario = usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido",
+                    NombreDestinatario = m.GrupoId != null
+                        ? grupos.FirstOrDefault(g => g.Id == m.GrupoId)?.Name ?? "Grupo Desconocido"
+                        : usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido",
                     UrlArchivo = m.UrlArchivo
                 })
                 .ToList();
-         
+
             Console.WriteLine($"Total Grupos: {grupos.Count}");
             foreach (var grupo in grupos)
             {
                 Console.WriteLine($"Grupo: {grupo.Name}, Usuarios: {grupo.Users?.Count ?? 0}");
             }
-
+            var leer=await _chatApiProxy.MarcarMensajesComoLeidosAsync(mensajesFiltrados);
 
             return View(chatViewModel);
         }
@@ -97,15 +99,20 @@ namespace Chat.Mvc.Controllers
             {
                 var grupoSeleccionado = grupos.FirstOrDefault(g => g.Id == grupoId);
                 remitentesFiltrados = grupoSeleccionado?.Users ?? new List<User>();
+
+                // Si se selecciona un grupo, no se permiten destinatarios individuales
+                ViewBag.UserDestinatarioId = new SelectList(new List<User>(), "Id", "Name");
             }
             else
             {
                 remitentesFiltrados = usuarios;
+
+                // Si no hay grupo seleccionado, muestra todos los destinatarios
+                ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name");
             }
 
             ViewBag.UserRemitenteId = new SelectList(remitentesFiltrados, "Id", "Name");
-            ViewBag.UserDestinatarioId = new SelectList(usuarios, "Id", "Name");
-            ViewBag.GrupoId = new SelectList(grupos, "Id", "Name");
+            ViewBag.GrupoId = new SelectList(grupos, "Id", "Name", grupoId);
 
             var mensaje = new Mensaje
             {
@@ -115,6 +122,34 @@ namespace Chat.Mvc.Controllers
 
             return View(mensaje);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> BuscarMensajesGlobal(string query)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return Json(new { success = false, mensajes = "El parámetro de búsqueda no puede estar vacío." });
+            }
+
+            try
+            {
+                var mensajes = await _chatApiProxy.BuscarMensajesPorContenidoAsync(query);
+
+                if (mensajes.Any())
+                {
+                    return Json(new { success = true, mensajes });
+                }
+                else
+                {
+                    return Json(new { success = false, mensajes = "No se encontraron mensajes." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, mensajes = $"Error al realizar la búsqueda: {ex.Message}" });
+            }
+        }
+
 
 
         [HttpPost]
@@ -164,6 +199,51 @@ namespace Chat.Mvc.Controllers
 
             return View(mensaje);
         }
+    [HttpGet]
+        public async Task<IActionResult> BuscarMensajes(string query, int usuarioActivoId, int? usuarioSeleccionadoId = null, int? grupoId = null)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return Json(new { success = false, mensajes = new List<object>() });
+            }
+
+            // Obtener mensajes y usuarios
+            var mensajes = await _chatApiProxy.GetMensajesAsync();
+            var usuarios = await _chatApiProxy.GetUsersAsync();
+            var grupos = await _chatApiProxy.GetGruposAsync();
+
+            // Filtrar mensajes
+            var mensajesFiltrados = mensajes.Where(m =>
+                !string.IsNullOrEmpty(m.Contenido) &&
+                m.Contenido.Contains(query, StringComparison.OrdinalIgnoreCase) &&
+                (grupoId.HasValue ? m.GrupoId == grupoId : true) &&
+                (usuarioSeleccionadoId.HasValue ?
+                    ((m.UserRemitenteId == usuarioActivoId && m.UserDestinatarioId == usuarioSeleccionadoId) ||
+                     (m.UserRemitenteId == usuarioSeleccionadoId && m.UserDestinatarioId == usuarioActivoId))
+                    : true)
+            ).Select(m =>
+            {
+                var nombreGrupo = m.GrupoId != null
+                    ? grupos.FirstOrDefault(g => g.Id == m.GrupoId)?.Name
+                    : null;
+
+                var nombreDestinatario = nombreGrupo
+                    ?? usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name
+                    ?? "Desconocido";
+
+                return new
+                {
+                    m.Id,
+                    m.Contenido,
+                    FechaEnvio = m.FechaEnvio.ToString("dd/MM/yyyy HH:mm"),
+                    Remitente = usuarios.FirstOrDefault(u => u.Id == m.UserRemitenteId)?.Name ?? "Desconocido",
+                    Destinatario = nombreDestinatario
+                };
+            }).ToList();
+
+            return Json(new { success = true, mensajes = mensajesFiltrados });
+        }
+    
 
 
         public async Task<IActionResult> Edit(int id)

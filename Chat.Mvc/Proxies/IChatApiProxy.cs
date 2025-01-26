@@ -1,4 +1,5 @@
 ﻿using chat.Modelos;
+using Chat.Mvc.Models;
 
 namespace Chat.Mvc.Proxies
 {
@@ -19,5 +20,7 @@ namespace Chat.Mvc.Proxies
         Task<bool> DeleteMensajeAsync(int id);
         Task<bool> UpdateMensajeAsync(Mensaje mensaje);
         Task<Grupo> GetGrupoByIdAsync(int id);
+        Task<List<MensajeConNombres>> BuscarMensajesPorContenidoAsync(string query);
+
     }
 }

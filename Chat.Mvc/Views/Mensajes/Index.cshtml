@@ -79,6 +79,15 @@
             </ul>
         }
         <a asp-action="Create" asp-controller="Grupos" class="btn btn-primary mt-3">Crear Grupo</a>
+        <div class="message-search">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar mensajes..." />
+                <button class="btn btn-primary" onclick="buscarMensajes()">Buscar</button>
+            </div>
+            <div id="searchResults" class="search-results mt-3">
+                <!-- Aquí aparecerán los resultados -->
+            </div>
+        </div>
 </div>
    
 
@@ -149,3 +158,39 @@
    
 </div>
 
+<script>
+    async function buscarMensajes() {
+        const query = document.getElementById('searchInput').value.trim();
+        const searchResults = document.getElementById('searchResults');
+
+        if (!query) {
+            searchResults.innerHTML = "<p>No se encontraron resultados.</p>";
+            return;
+        }
+
+        searchResults.innerHTML = "<p class='loading'>Cargando...</p>"; // Indicador de carga
+
+        try {
+            const response = await fetch(`/Mensajes/BuscarMensajesGlobal?query=${encodeURIComponent(query)}`);
+            const data = await response.json();
+
+            if (data.success && data.mensajes.length > 0) {
+                searchResults.innerHTML = data.mensajes.map(m => `
+                    <div>
+                        <p><strong>De:</strong> ${m.nombreRemitente}</p>
+                        <p><strong>Para:</strong> ${m.nombreDestinatario}</p>
+                        <p>${m.contenido}</p>
+                        <p><em>${new Date(m.fechaEnvio).toLocaleString()}</em></p>
+                        <hr>
+                    </div>
+                `).join("");
+            } else {
+                searchResults.innerHTML = "<p>No se encontraron resultados.</p>";
+            }
+        } catch (error) {
+            console.error("Error al buscar mensajes:", error);
+            searchResults.innerHTML = "<p>Error al realizar la búsqueda.</p>";
+        }
+    }
+
+</script>

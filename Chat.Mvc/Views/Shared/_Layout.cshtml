@@ -247,6 +247,25 @@
                 border-radius: 5px;
             }
 
+    .message-search {
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        background: #f8f9fa;
+    }
+
+    .search-results {
+        max-height: 150px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+        .search-results p {
+            margin: 5px 0;
+        }
+
     body.dark-mode {
         background-color: #121212;
         color: #e0e0e0;
@@ -298,6 +317,63 @@
                 body.dark-mode .message-input button:hover {
                     background: #007bff;
                 }
+
+    body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+        body.dark-mode .form-control,
+        body.dark-mode select {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            border-color: #444;
+        }
+
+            body.dark-mode select option {
+                background-color: #1e1e1e;
+                color: #e0e0e0;
+            }
+
+        body.dark-mode .navbar,
+        body.dark-mode .message-search,
+        body.dark-mode .search-results {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+            body.dark-mode .search-results p {
+                color: #c0c0c0;
+            }
+
+        body.dark-mode #notification-bell {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .btn-primary {
+            background-color: #4a90e2;
+            border-color: #4a90e2;
+            color: #fff;
+        }
+
+    .search-results {
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+        .search-results p {
+            margin: 5px 0;
+        }
+
+            .search-results p.loading {
+                font-size: 16px;
+                color: #007bff;
+                font-style: italic;
+            }
 </style>
 
 <script>

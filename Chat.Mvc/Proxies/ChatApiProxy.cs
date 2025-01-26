@@ -1,4 +1,5 @@
 ﻿using chat.Modelos;
+using Chat.Mvc.Models;
 using Chat.Mvc.Proxies;
 using Newtonsoft.Json;
 using System.Net.Http;
@@ -127,6 +128,7 @@ public class ChatApiProxy : IChatApiProxy
         response.EnsureSuccessStatusCode();
         return bool.Parse(await response.Content.ReadAsStringAsync());
     }
+
     public async Task<bool> MarcarMensajesComoLeidosAsync(List<Mensaje> mensajes)
     {
         try
@@ -171,6 +173,33 @@ public class ChatApiProxy : IChatApiProxy
             return false;
         }
     }
+    public async Task<List<MensajeConNombres>> BuscarMensajesPorContenidoAsync(string query)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+        {
+            throw new ArgumentException("El parámetro de búsqueda no puede estar vacío.", nameof(query));
+        }
+
+        var response = await _httpClient.GetAsync($"/api/Mensajes/BuscarPorContenido?query={Uri.EscapeDataString(query)}");
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception($"Error al buscar mensajes: {response.ReasonPhrase}");
+        }
+
+        var content = await response.Content.ReadAsStringAsync();
+
+        // Asegúrate de deserializar como una lista de `MensajeConNombres`
+        var apiResponse = JsonConvert.DeserializeObject<ApiResponse<List<MensajeConNombres>>>(content);
+
+        if (apiResponse == null || !apiResponse.Success)
+        {
+            throw new Exception("Error al procesar la respuesta de la API.");
+        }
+
+        return apiResponse.Mensajes ?? new List<MensajeConNombres>();
+    }
+
 
 
 

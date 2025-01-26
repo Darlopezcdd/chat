@@ -199,6 +199,22 @@
   },
   {
     "ContainingType": "chat.Api.Controllers.MensajesController",
+    "Method": "BuscarPorContenido",
+    "RelativePath": "api/Mensajes/BuscarPorContenido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "chat.Api.Controllers.MensajesController",
     "Method": "MarcarComoLeidos",
     "RelativePath": "api/Mensajes/MarcarComoLeidos",
     "HttpMethod": "PUT",

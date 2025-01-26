@@ -1,10 +1,10 @@
 ﻿@model chat.Modelos.Mensaje
 
 <h1>Enviar Mensaje</h1>
-<form asp-action="Create" enctype="multipart/form-data" method="post">
+<form asp-action="Create" method="get">
     <div class="form-group">
         <label asp-for="GrupoId" class="control-label">Grupo</label>
-        <select asp-for="GrupoId" class="form-control" asp-items="ViewBag.GrupoId" onchange="filtrarPorGrupo()">
+        <select asp-for="GrupoId" class="form-control" asp-items="ViewBag.GrupoId" onchange="this.form.submit()">
             <option value="">Seleccionar Grupo</option>
         </select>
     </div>
@@ -16,8 +16,7 @@
 
     <div class="form-group">
         <label asp-for="UserDestinatarioId" class="control-label">Destinatario</label>
-        <select asp-for="UserDestinatarioId" class="form-control" asp-items="ViewBag.UserDestinatarioId" id="destinatario">
-        </select>
+        <select asp-for="UserDestinatarioId" class="form-control" asp-items="ViewBag.UserDestinatarioId"></select>
     </div>
 
     <div class="form-group">
@@ -30,10 +29,7 @@
         <input asp-for="UrlArchivo" class="form-control" type="file" name="archivoAdjunto" />
     </div>
 
-
- 
     <button type="submit" class="btn btn-primary">Enviar</button>
-
     <a href="@Url.Action("Index", "Mensajes")" class="btn btn-secondary">Cancelar</a>
 </form>
 

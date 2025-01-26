@@ -178,5 +178,53 @@ namespace chat.Api.Controllers
         {
             return _context.Mensaje.Any(e => e.Id == id);
         }
+
+        [HttpGet("BuscarPorContenido")]
+        public IActionResult BuscarPorContenido(string query)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return BadRequest(new { success = false, mensajes = "El parámetro de búsqueda no puede estar vacío." });
+            }
+
+            try
+            {
+                // Cargar los mensajes en memoria para aplicar Contains
+                var mensajes = _context.Mensaje
+                    .AsEnumerable() // Esto carga los datos en memoria
+                    .Where(m => !string.IsNullOrEmpty(m.Contenido) &&
+                                m.Contenido.Contains(query, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                if (!mensajes.Any())
+                {
+                    return Ok(new { success = false, mensajes = "No se encontraron mensajes." });
+                }
+
+                // Transformar los datos para incluir nombres en lugar de IDs
+                var usuarios = _context.User.ToList();
+                var grupos = _context.Grupo.ToList();
+
+                var mensajesConNombres = mensajes.Select(m => new
+                {
+                    m.Id,
+                    m.Contenido,
+                    m.FechaEnvio,
+                    NombreRemitente = usuarios.FirstOrDefault(u => u.Id == m.UserRemitenteId)?.Name ?? "Desconocido",
+                    NombreDestinatario = m.GrupoId.HasValue
+                        ? grupos.FirstOrDefault(g => g.Id == m.GrupoId)?.Name ?? "Grupo"
+                        : usuarios.FirstOrDefault(u => u.Id == m.UserDestinatarioId)?.Name ?? "Desconocido",
+                    m.UrlArchivo
+                }).ToList();
+
+                return Ok(new { success = true, mensajes = mensajesConNombres });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, mensajes = $"Error interno: {ex.Message}" });
+            }
+        }
+
+
     }
 }
